@@ -1,0 +1,14 @@
+GET http://localhost:3000/subscribers
+
+###
+
+GET http://localhost:3000/subscribers/5e2fbfa658c2636fae4ac997
+
+###
+POST http://localhost:3000/subscribers
+Content-Type: application/json
+
+{
+    "name":"Teezy",
+    "subscribedToChannel":"HypeBEAST DREAMS"
+}
