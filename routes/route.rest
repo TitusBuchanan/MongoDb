@@ -1,14 +1,20 @@
-GET http://localhost:3000/subscribers
+GET http://localhost:3000/graduates
 
 ###
 
-GET http://localhost:3000/subscribers/5e2fbfa658c2636fae4ac997
+GET http://localhost:3000/graduates/11
 
 ###
-POST http://localhost:3000/subscribers
+POST http://localhost:3000/graduates
 Content-Type: application/json
 
 {
-    "name":"Teezy",
-    "subscribedToChannel":"HypeBEAST DREAMS"
+        "name":"Titus",
+        "lastName":"Buchanan",
+        "jobTitle":"Finance",
+        "companyName":"Marketing",
+        "keySkills":"Coding",
+        "linkedIn":"Titus Buchanan",
+        "gitHub":"githubTitus",
+        "twitterName":"PrettyMofoTItus"
 }
