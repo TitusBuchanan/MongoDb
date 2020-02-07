@@ -9,14 +9,14 @@ POST http://localhost:3000/graduates
 Content-Type: application/json
 
 {
-        "name":"Jamie",
-        "lastName":"Buchanan",
+        "name":"John",
+        "lastName":"Smith",
         "jobTitle":"Homie",
-        "companyName":"Marketing",
+        "companyName":"CareerDev",
         "keySkills":"Coding",
-        "linkedIn":"Jamie",
-        "gitHub":"Jamie",
-        "twitterName":"PrettyMofoTItus"
+        "linkedIn":"johnLinkedIn",
+        "gitHub":"dddndkdkd",
+        "twitterName":"PreasttyMofoTItus"
 }
 
 
@@ -25,9 +25,9 @@ DELETE  http://localhost:3000/graduates/5e3b66026062bd94e8c2382f
 
 
 ###
-PATCH http://localhost:3000/graduates/5e3b8d6c3b6e179644328ed7
+PATCH http://localhost:3000/graduates/5e3b744136bf4295b60149b4
 Content-Type: application/json
 
 {
-    "linkedIn":"TEEEEEEZUS"
+    "name":"TEEEEEEZUS"
 }
