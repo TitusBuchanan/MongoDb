@@ -2,19 +2,32 @@ GET http://localhost:3000/graduates
 
 ###
 
-GET http://localhost:3000/graduates/11
+GET http://localhost:3000/graduates/5e3b8d6c3b6e179644328ed7
 
 ###
 POST http://localhost:3000/graduates
 Content-Type: application/json
 
 {
-        "name":"Titus",
+        "name":"Jamie",
         "lastName":"Buchanan",
-        "jobTitle":"Finance",
+        "jobTitle":"Homie",
         "companyName":"Marketing",
         "keySkills":"Coding",
-        "linkedIn":"Titus Buchanan",
-        "gitHub":"githubTitus",
+        "linkedIn":"Jamie",
+        "gitHub":"Jamie",
         "twitterName":"PrettyMofoTItus"
+}
+
+
+###
+DELETE  http://localhost:3000/graduates/5e3b66026062bd94e8c2382f
+
+
+###
+PATCH http://localhost:3000/graduates/5e3b8d6c3b6e179644328ed7
+Content-Type: application/json
+
+{
+    "linkedIn":"TEEEEEEZUS"
 }
