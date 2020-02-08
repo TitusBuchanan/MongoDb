@@ -3,7 +3,8 @@ const mongoose = require('mongoose');
 
 const express = require('express');
 const app = express();
-
+const GraduatesRouter = require('./routes/graduates');
+app.use('/graduates', GraduatesRouter);
 
 mongoose.connect(process.env.TITUS , { useNewUrlParser: true, useUnifiedTopology: true })
     .then(() => console.log("TEEZUS is connected to MongoDB"))
@@ -12,7 +13,6 @@ mongoose.connect(process.env.TITUS , { useNewUrlParser: true, useUnifiedTopology
 
     app.use(express.json())
 
-const GraduatesRouter = require('./routes/graduates');
-app.use('/graduates', GraduatesRouter);
+
 
 app.listen(3000, () => console.log('Teezus has started the server'));
